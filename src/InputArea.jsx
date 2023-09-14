@@ -12,14 +12,14 @@ function InputArea(props) {
     }
     return (
         <div className="input-area">
-            <input onChange={handleChange} type="text" name="input-item" id="input-item" value={inputText} />
-            <button
+            <input className="text-input" onChange={handleChange} type="text" name="input-item" id="input-item" value={inputText} />
+            <button className="add-button"
                 onClick={() => {
                     props.onAdd(inputText);
                     setInputText("");
                 }}
             >
-                <span>Add</span>
+                <span className="text-button" >Add</span>
             </button>
         </div>
     )

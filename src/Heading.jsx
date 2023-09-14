@@ -4,8 +4,8 @@ export default Heading;
 
 function Heading() {
     return (
-        <div className="heading">
-            <h1 className="heading">To-Do List</h1>
+        <div className="heading-container">
+            <h1 className="heading-text">To-Do List</h1>
         </div>
     )
 }
